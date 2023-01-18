@@ -21,7 +21,7 @@ body{
 }
 
 .one{
-    background-image: url('/images/image-product-desktop.jpg');
+    background-image: url('./images/image-product-desktop.jpg');
     background-size: cover;
     background-repeat: none;
     background-position: center;
