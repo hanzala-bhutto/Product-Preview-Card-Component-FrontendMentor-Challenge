@@ -1,0 +1,88 @@
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+   background-color: hsl(30, 38%, 92%); 
+   display:flex;
+   justify-content: center;
+   align-items: center; 
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    height: 450px;
+    width: 600px;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 5px 5px 5px grey;
+    /* margin: auto; */
+}
+
+.one{
+    background-image: url('/images/image-product-desktop.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    border-radius: 5px 0 0 5px;
+}
+
+.two{
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.two-one{
+    font-size:x-large;
+}
+
+.two-four-p1{
+    display: inline;
+    float:left;
+    font-size:x-large;
+    color:hsl(158, 36%, 37%);
+    margin-right:30px;
+}
+
+.two-four-p2{
+    text-decoration:line-through;
+}
+
+.button{
+    text-align: center;
+    color:white;
+    background-color:hsl(158, 36%, 37%);
+    padding:10px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.gray-color{
+    color: hsl(228, 12%, 48%);
+}
+
+@media only screen and (max-width: 670px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        height: 90%;
+        width: 80%;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto;
+    } 
+
+    .one{
+        background-repeat: none;
+    }
+
+}
